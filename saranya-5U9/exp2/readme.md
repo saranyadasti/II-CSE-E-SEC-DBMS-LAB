@@ -45,5 +45,7 @@ INSERT INTO Boat VALUES(101,'Interlake','blue'),(102,'Interlake','red'),(103,'Cl
 SELECT * FROM Boat;
 
 ```
+### Screen Shots
 
+![ exp2 output](op1.png)
 
