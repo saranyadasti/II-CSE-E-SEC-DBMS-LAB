@@ -1,15 +1,17 @@
-## CREATING RESERVES TABLE
+##Creating the reserves table
 ```
 CREATE TABLE Reserves(
 sid NUMBER,
 bid NUMBER,
 day DATE );
 ```
-##DESCRIBE RESERVES TABLE
+
+## Describing the reserves table
 ```
 DESC Reserves;
 ```
-## INSERT VALUES IN RESERVES TABLE
+
+## Inserting the values into the resreves table
 ```
 INSERT INTO Reserves VALUES(22,101,'10/10/98');
 INSERT INTO Reserves VALUES(22,102,'10/10/98');
@@ -22,12 +24,11 @@ INSERT INTO Reserves VALUES(64,101,'9/5/98');
 INSERT INTO Reserves VALUES(64,102,'9/8/98');
 INSERT INTO Reserves VALUES(74,103,'9/8/98');
 ```
-## DISPLAY RESERVES TABLE
+
+## Display the reserves table
 ```
 SELECT *FROM Reserves;
 ```
 
-### Screen Shots
-
+## Screen shots
 ![ exp2 output](op2.png)
-
