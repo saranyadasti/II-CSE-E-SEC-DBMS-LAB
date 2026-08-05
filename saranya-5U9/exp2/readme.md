@@ -86,7 +86,7 @@ INSERT INTO Boat VALUES(101,'Interlake','blue'),(102,'Interlake','red'),(103,'Cl
 ```
 
 
-##DISPLAYING THE BOAT TABLE
+## DISPLAYING THE BOAT TABLE
 ```
 SELECT * FROM Boat;
 ```
