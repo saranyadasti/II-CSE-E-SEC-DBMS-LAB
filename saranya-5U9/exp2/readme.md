@@ -1,4 +1,4 @@
-
+o
 ## CREATING THE SAILORS TABLE
 ```
 CREATE TABLE Sailors(
