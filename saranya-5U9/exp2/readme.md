@@ -1,4 +1,4 @@
-o
+
 ## CREATING THE SAILORS TABLE
 ```
 CREATE TABLE Sailors(
@@ -27,8 +27,6 @@ INSERT INTO sailors VALUES(31,'Lubber',8,55.5),(32,'Andy',8,25.5),(58,'Rusty',10
 ``` 
 SELECT * FROM Sailors;
 ```
-
-![exp2 output](OP-1.png)
 
 
 
@@ -67,9 +65,6 @@ INSERT INTO Reserves VALUES(74,103,'9/8/98');
 SELECT *FROM Reserves;
 ```
 
-![exp2 output](OP-2.png)
-
-
 
 ## CREATING THE BOAT TABLE
 ```
@@ -97,5 +92,4 @@ INSERT INTO Boat VALUES(101,'Interlake','blue'),(102,'Interlake','red'),(103,'Cl
 SELECT * FROM Boat;
 ```
 
-![exp2 output](OP-3.png)
 
