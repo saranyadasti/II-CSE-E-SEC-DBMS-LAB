@@ -34,6 +34,8 @@ Prerequisite_Number NUMBER,
 PRIMARY KEY(Course_Number),
 FOREIGN KEY(Course_Number) REFERENCES Course(Course_Number) );
 ```
+## Output 1 
+![ output 1](op1.png)
 ## 2.Display the decription of each table
 ```
 DESC Student;
@@ -42,6 +44,9 @@ DESC Section;
 DESC Grade_Report;
 DESC Prerequisite;
 ```
+## Output2
+
+![ output 2](op2.png)
 ## 3.Insert the values specified by the above database
 ```
 INSERT INTO Student VALUES('Smith',17,1,'CS'),('Brown',8,2,'CS'),('Jaylor',25,3,'Math');
