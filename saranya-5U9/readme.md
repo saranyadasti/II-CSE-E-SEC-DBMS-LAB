@@ -34,6 +34,9 @@ Prerequisite_Number NUMBER,
 PRIMARY KEY(Course_Number),
 FOREIGN KEY(Course_Number) REFERENCES Course(Course_Number) );
 ```
+
+
+
 ## 2.Display the decription of each table
 ```
 DESC Student;
