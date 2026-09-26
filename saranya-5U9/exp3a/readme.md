@@ -15,6 +15,8 @@ CREATE TABLE EMPLOYEE
 );
 ```
 
+![output](3a.png)
+
 ## Inserting values into Employee table
 ```
 INSERT INTO EMPLOYEE
@@ -58,10 +60,14 @@ VALUES (110, 'Arjun', 'Singh', 'M', 'MK_MAN', 'Marketing', 68000, 5,
         TO_DATE('30-APR-2019','DD-MON-YYYY'), 'Jaipur');
 ```
 
+[output](3a1.png)
+
 ## Displaying Employee table
 ```    
 SELECT * FROM EMPLOYEE;
 ```
+
+![output](3a2.png)
 
 ## Q1. Write an SQL query to display the employee ID, first name, and hire date in the format
 ```
@@ -71,12 +77,16 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
 FROM EMPLOYEE;
 ```
 
+![output](3q1.png)
+
 ## Q2. Write an SQL query to display the employee ID, first name, and salary formatted with a currency symbol using the TO_CHAR function.
 ```
 SELECT EMPLOYEE_ID, FIRST_NAME,
        TO_CHAR(SALARY, 'L99,999,999') AS SALARY
 FROM EMPLOYEE;
 ```
+
+![output](3q2.png)
 
 ## Q3. Write an SQL query to add 5000 to each employee's salary using the TO_NUMBER function.
 ```
@@ -85,12 +95,16 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
 FROM EMPLOYEE;
 ```
 
+![output](3q3.png)
+
 ## Q4. Write an SQL query to display the details of employees who were hired after 01-JAN-2020 using the TO_DATE function.
 ```
 SELECT *
 FROM EMPLOYEE
 WHERE HIRE_DATE > TO_DATE('01-JAN-2020', 'DD-MON-YYYY');
 ```
+
+![output](3q4.png)
 
 ## Q5. Write an SQL query to display the full name of each employee by concatenating the first name and last name using the concatenation (||) operator.
 ```
@@ -99,12 +113,16 @@ SELECT EMPLOYEE_ID,
 FROM EMPLOYEE;
 ```
 
+![output](3q5.png)
+
 ## Q6. Write an SQL query to concatenate the first name and last name of each employee using the CONCAT function.
 ```
 SELECT EMPLOYEE_ID,
        CONCAT(FIRST_NAME, CONCAT(' ', LAST_NAME)) AS FULL_NAME
 FROM EMPLOYEE;
 ```
+
+![output](3q6.png)
 
 ## Q7. Write an SQL query to display each employee's first name left-padded with * characters using the LPAD function.
 ```
@@ -113,12 +131,16 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 ```
 
+![output](3q7.png)
+
 ## Q8. Write an SQL query to display each employee's first name right-padded with * characters using the RPAD function.
 ```
 SELECT FIRST_NAME,
        RPAD(FIRST_NAME, 10, '*') AS PADDED_NAME
 FROM EMPLOYEE;
 ```
+
+![output](3q8.png)
 
 ## Q9. Write an SQL query to remove leading spaces from employee names using the LTRIM function.
 ```
@@ -127,12 +149,16 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 ```
 
+![output](3q9.png)
+
 ## Q10. Write an SQL query to remove trailing spaces from employee names using the RTRIM function.
 ```
 SELECT FIRST_NAME,
        RTRIM(FIRST_NAME) AS TRIMMED_NAME
 FROM EMPLOYEE;
 ```
+
+![output](3q10.png)
 
 ## Q11. Write an SQL query to display all employee first names in lowercase using the LOWER function.
 ```
@@ -141,12 +167,16 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 ```
 
+![output](3q11.png)
+
 ## Q12. Write an SQL query to display all employee first names in uppercase using the UPPER function.
 ```
 SELECT FIRST_NAME,
        UPPER(FIRST_NAME) AS UPPERCASE_NAME
 FROM EMPLOYEE;
 ```
+
+![output](3q12.png)
 
 ## Q13. Write an SQL query to display employee first names in proper case using the INITCAP function.
 ```
@@ -155,12 +185,16 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 ```
 
+![output](3q13.png)
+
 ## Q14. Write an SQL query to display the length of each employee's first name using the LENGTH function.
 ```
 SELECT FIRST_NAME,
        LENGTH(FIRST_NAME) AS NAME_LENGTH
 FROM EMPLOYEE;
 ```
+
+![output](3q14.png)
 
 ## Q15. Write an SQL query to display the first three characters of each employee's first name using the SUBSTR function.
 ```
@@ -169,6 +203,8 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 ```
 
+![output](3q15.png)
+
 ## Q16. Write an SQL query to find the position of the character 'a' in each employee's first name using the INSTR function.
 ```
 SELECT FIRST_NAME,
@@ -176,15 +212,25 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 ```
 
+![output](3q16.png)
+
 ## Q17. Write an SQL query to display the current system date along with each employee's details using the SYSDATE function.
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME,
        HIRE_DATE, SYSDATE AS CURRENT_DATE
 FROM EMPLOYEE;
+```
+
+![output](3q17.png)
 
 ## Q18. Write an SQL query to display the next Monday after each employee's hire date using the NEXT_DAY function.
+```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        NEXT_DAY(HIRE_DATE, 'MONDAY') AS NEXT_MONDAY
 FROM EMPLOYEE;
+```
+
+![output](3q18.png)
 
 ## Q19. Write an SQL query to display the date obtained by adding six months to each employee's hire date using the ADD_MONTHS function.
 ```
@@ -193,12 +239,16 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 ```
 
+![output](3q19.png)
+
 ## Q20. Write an SQL query to display the last day of the month for each employee's hire date using the LAST_DAY function.
 ```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        LAST_DAY(HIRE_DATE) AS LAST_DAY_OF_MONTH
 FROM EMPLOYEE;
 ```
+
+![output](3q20.png)
 
 ## Q21. Write an SQL query to calculate the total number of months each employee has worked using the MONTHS_BETWEEN function.
 ```
@@ -207,12 +257,16 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 ```
 
+![output](3q21.png)
+
 ## Q22. Write an SQL query to display the smaller value between each employee's salary and 60000 using the LEAST function.
 ```
 SELECT EMPLOYEE_ID, FIRST_NAME, SALARY,
        LEAST(SALARY, 60000) AS SMALLER_VALUE
 FROM EMPLOYEE;
 ```
+
+![output](3q22.png)
 
 ## Q23. Write an SQL query to display the greater value between each employee's salary and 60000 using the GREATEST function.
 ```
@@ -221,12 +275,16 @@ SELECT EMPLOYEE_ID, FIRST_NAME, SALARY,
 FROM EMPLOYEE;
 ```
 
+![output](3q23.png)
+
 ## Q24. Write an SQL query to display the first day of the month of each employee's hire date using the TRUNC function.
 ```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        TRUNC(HIRE_DATE, 'MONTH') AS FIRST_DAY_OF_MONTH
 FROM EMPLOYEE;
 ```
+
+![output](3q24.png)
 
 ## Q25. Write an SQL query to round each employee's hire date to the nearest month using the ROUND function.
 ```
@@ -235,6 +293,8 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 ```
 
+![output](3q25.png)
+
 ## Q26. Write an SQL query to display each employee's hire date in the format DAY, DD-MON-YYYY using the TO_CHAR function.
 ```
 SELECT EMPLOYEE_ID, FIRST_NAME,
@@ -242,9 +302,12 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
 FROM EMPLOYEE;
 ```
 
+![output](3q26.png)
+
 ## Q27. Write an SQL query to display the details of employees who were hired before 01-JAN-2019 using the TO_DATE function.
 ```
 SELECT *
 FROM EMPLOYEE
 WHERE HIRE_DATE < TO_DATE('01-JAN-2019', 'DD-MON-YYYY');
 ```
+![output](3q27.png)
